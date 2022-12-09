@@ -1,0 +1,11 @@
+org\example\repositories\UserRepository.class
+org\example\service\FilePreferitiService.class
+org\example\entity\FilePreferiti.class
+org\example\Main.class
+org\example\service\FileService.class
+org\example\Main$1.class
+org\example\repositories\FileRepository.class
+org\example\service\UserService.class
+org\example\entity\File.class
+org\example\repositories\FilePreferitiRepository.class
+org\example\entity\User.class
