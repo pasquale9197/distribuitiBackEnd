@@ -21,7 +21,9 @@ public class FileService
 
     @Transactional(readOnly = true)
     public List<File> listaFile()
-    {   return fileRepository.findAll();
+    {   if(userRepository.findAll().size() == 0)
+            throw new RuntimeException("Empty list");
+        return fileRepository.findAll();
     }
 
     @Transactional(readOnly = false)

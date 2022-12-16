@@ -68,7 +68,8 @@ public class UserService
     {   if(userRepository.existsByEmail(utente.getEmail()))
         throw new RuntimeException("Email non disponibile");
         if(userRepository.existsByNomeutente(utente.getNomeutente()))
-            throw new RuntimeException("Nome utente non disponibile");
+        {    throw new RuntimeException("Nome utente non disponibile");
+        }
         userRepository.saveAndFlush(utente);
     }
 
